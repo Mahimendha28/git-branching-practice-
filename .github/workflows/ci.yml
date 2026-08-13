@@ -1,0 +1,14 @@
+name: First CI workflow
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "hello github actions"
